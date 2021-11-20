@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <header class="page-header">
       <!-- MAIN HEADER -->
       <section class="header-wrapper">
         <div class="header-item header-logo">
@@ -52,29 +52,75 @@
       </section>
       <!-- NAVBAR -->
       <section class="navbar">
+        <!-- nav-main -->
         <ul class="nav-main">
-          <li class="nav-item"><a href=""></a></li>
-          <li class="nav-item"><a href="">Movies</a></li>
-          <li class="nav-item"><a href="">Tv Series</a></li>
+          <li class="nav-logo">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a href=""
+              >Movies
+              <span><i class="fa fa-angle-down" aria-hidden="true"></i></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="">one</a></li>
+              <li class="dropdown-item"><a href="">two</a></li>
+              <li class="dropdown-item"><a href="">three</a></li>
+              <li class="dropdown-item"><a href="">four</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href=""
+              >Tv Series<span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i></span
+            ></a>
+          </li>
           <li class="nav-item"><a href="">Today Movies</a></li>
           <li class="nav-item"><a href="">Hindi Dubbed</a></li>
           <li class="nav-item"><a href="">Games</a></li>
           <li class="nav-item"><a href="">Software</a></li>
-          <li class="nav-item"><a href="">BDIX TV</a></li>
-          <li class="nav-item"><a href="">BDIX</a></li>
-          <li class="nav-item"><a href="">Online Radio</a></li>
+          <li class="nav-item">
+            <a href=""
+              >BDIX TV<span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href=""
+              >BDIX<span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a href=""
+              >Online Radio<span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i></span
+            ></a>
+          </li>
+        </ul>
+        <!-- nav-social -->
+        <ul class="nav-social">
+          <li class="social-item facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </li>
+          <li class="social-item twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+          <li class="social-item youtube">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </li>
+          <li class="social-item mail">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </li>
         </ul>
       </section>
     </header>
     <!-- MAIN SECTION -->
-    <main>
-      <!-- LEFTBAR -->
-      <section class="leftbar">
+    <main class="content-wrapper">
+      <!-- Lmain content -->
+      <section class="main-content">
         <div class="hero-section">
-          <img
-            src="http://showtimebd.com/kachajal/images/movies/No_Time_to_Die_(2021)_WEB-DL.jpg"
-            alt=""
-          />
+          <img src="./assets/images/ironman.jpg" alt="" class="hero-img" />
         </div>
         <!-- NEW RELEASED -->
         <div class="new-released-wrapper">
@@ -773,26 +819,122 @@
           </div>
         </div>
       </section>
-      <section class="rightbar">
+      <!-- sidebar -->
+      <section class="sidebar">
         <!-- MOVIE REQUEST -->
         <div class="movie-request">
-          <h3>Movie Request</h3>
+          <h3><span>Movie Request</span></h3>
           <div class="movie-request-form">
             <form action="">
-              <div class="form-items">
-                <label for="name">Your Name&nbsp;<span>{required}</span></label>
+              <div class="form-item">
+                <label for="movie-request"
+                  >Movie Request<span>&nbsp;&nbsp;&nbsp;{required}</span></label
+                >
                 <input
                   type="text"
-                  id="name"
-                  placeholder="please enter your name"
+                  id="movie-request"
+                  placeholder="movie request here"
                 />
               </div>
-              <div class="form-items"></div>
-              <div class="form-items"></div>
+              <div class="form-item">
+                <label for="movie-request"
+                  >Movie Request<span>&nbsp;&nbsp;&nbsp;{required}</span></label
+                >
+                <input
+                  type="text"
+                  id="movie-request"
+                  placeholder="movie request here"
+                />
+              </div>
+              <div class="form-item">
+                <label for="movie-request"
+                  >Movie Request<span>&nbsp;&nbsp;&nbsp;{required}</span></label
+                >
+                <select
+                  name="form-select-category"
+                  id="movie-request-select-category"
+                >
+                  <option>Selecet category</option>
+                  <option value="one">one</option>
+                  <option value="two">movie</option>
+                  <option value="three">three</option>
+                  <option value="four">four</option>
+                </select>
+              </div>
+              <div class="form-item form-button">
+                <button class="movie-request-button">send request</button>
+              </div>
             </form>
           </div>
         </div>
+        <div class="sidebar-single">
+          <ul class="sidebar-single-header">
+            <li class="sidebar-single-text">Movie Request</li>
+          </ul>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+          </ul>
+        </div>
+        <div class="sidebar-single">
+          <ul class="sidebar-single-header">
+            <li class="sidebar-single-text">Movie Request</li>
+          </ul>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+          </ul>
+        </div>
+        <div class="sidebar-single">
+          <ul class="sidebar-single-header">
+            <li class="sidebar-single-text">Movie Request</li>
+          </ul>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+          </ul>
+        </div>
       </section>
     </main>
+    <footer>
+      <p>all right reserved</p>
+    </footer>
   </body>
 </html>
