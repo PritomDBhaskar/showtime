@@ -375,6 +375,7 @@ ul > li {
 }
 
 .sidebar-dropdown-menu .sidebar-dropdown-item {
+  padding: 10px;
   min-width: 160px;
   text-align: center;
   background: #424852;
