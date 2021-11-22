@@ -177,15 +177,18 @@ ul > li {
   display: none;
 }
 .dropdown-menu .dropdown-item {
-  max-width: 160px;
+  min-width: 160px;
   text-align: center;
+  background: #222222;
 }
 
 .nav-item:hover .dropdown-menu {
   display: block;
+  position: absolute;
 }
-.dropdown-item {
-  background: #222222;
+
+.dropdown-item:hover {
+  background: #bc75d6;
 }
 /* content section */
 .content-wrapper {
@@ -287,6 +290,28 @@ ul > li {
   padding-top: 10px;
   padding-left: 30px;
 }
+.sidebar-dropdown-menu {
+  display: none;
+}
+.sidebar-dropdown-menu .sidebar-dropdown-item {
+  min-width: 160px;
+  text-align: center;
+  background: #424852;
+  border: none;
+}
+.sidebar-dropdown-menu .sidebar-dropdown-item a {
+  text-align: center;
+  color: #ddd;
+}
+
+.sidebar-dropdown:hover .sidebar-dropdown-menu {
+  display: block;
+}
+.sidebar-dropdown-item:hover {
+  background: #bc75d6;
+  background: #49505a;
+}
+
 /* movie request form */
 .movie-request h3 {
   background: #222222;
