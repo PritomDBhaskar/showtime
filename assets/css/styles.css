@@ -32,8 +32,12 @@ ul > li {
 }
 .header-wrapper .header-logo {
   width: 300px;
+  margin-right: 121px;
 }
-.header-wrapper .header-button button {
+.header-wrapper .header-button {
+  margin-right: 70px;
+}
+.header-wrapper .header-item .header-button button {
   padding: 6px 12px;
   background-color: #d083cf;
   color: #fff;
@@ -45,17 +49,17 @@ ul > li {
 .header-wrapper .header-search {
   padding-right: 5px;
 }
-.header-wrapper .header-search .heaeder-search-bar {
+.header-wrapper .header-search .header-search-bar {
   position: relative;
   padding-left: 35px;
 }
 
-.header-wrapper .header-search .heaeder-search-bar input {
+.header-wrapper .header-search .header-search-bar input {
   width: 400px;
   padding: 8px;
   border: 1px solid silver;
 }
-.header-wrapper .header-search .heaeder-search-bar span {
+.header-wrapper .header-search .header-search-bar span {
   position: absolute;
   bottom: 8px;
   right: 8px;
